@@ -1,11 +1,11 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: AnsibleJob
 metadata:
-  name: prehook-job
+  name: posthook-job
   namespace: acm-application-deploy-test
 spec:
   tower_auth_secret: aap
-  job_template_name: Prehook Demo Job Template
+  job_template_name: Posthook Demo Job Template
   extra_vars:
     cost: 6.88
     ghosts: ["inky","pinky","clyde","sue"]
